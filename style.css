@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(89, 88, 88);
+    color: rgb(100, 100, 100);
 }
 
 header {
@@ -42,13 +42,13 @@ h1,
 h2 {
     display: inline-block;
     max-width: 400px;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 p {
     /* display: inline-block; */
-    max-width: 60%;
+    max-width: 65%;
 }
 
 section.services {
@@ -64,16 +64,29 @@ section.services {
     justify-content: space-between;
     gap: 20px;
 }
-.service-option p{
+
+.service-option p {
     max-width: 100%;
+    height: 135px;
+}
+
+.service-option a {
+    background-color: #353434;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: small;
+    display: block;
+    width: fit-content;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 section.clients {
-    padding: 80px 0px;
+    padding: 60px 0px;
     background-image: url(Assets/bg-image-2.png);
     background-size: cover;
     background-repeat: round;
@@ -81,12 +94,26 @@ section.clients {
 
 .clients h2 {
     color: white;
+    display: inline;
 }
 
 .logos {
+    padding: 60px 0px;
     display: flex;
     justify-content: space-around;
     gap: 20px;
+}
+
+.clients a {
+    background-color: white;
+    color: #353434;
+    border-radius: 2px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: small;
+    display: block;
+    margin: auto;
+    width: fit-content;
 }
 
 section.projects {
@@ -109,7 +136,7 @@ section.projects {
     width: 100%;
 }
 
-.Cards-Project p{
+.Cards-Project p {
     max-width: 100%;
 }
 
@@ -121,14 +148,17 @@ footer {
     align-items: center;
     /* gap: 10px; */
 }
-footer img{
+
+footer img {
     width: 50px;
 }
+
 footer h2 {
     font-size: small;
     color: white;
     font-weight: lighter;
 }
+
 footer a {
     font-size: small;
     color: white;
