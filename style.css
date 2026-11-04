@@ -24,55 +24,114 @@ nav a {
     font-weight: bold;
 }
 
-.hero {
-    max-width: 100%;
-    height: 600px;
+section.hero {
+    padding-top: 200px;
+    height: 500px;
     background-image: url(Assets/bg-image-hero.png);
     background-size: cover;
     background-repeat: round;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding-left: 200px;
 }
 
-.about-us {
-    width: 400px;
-    margin-left: 100px;
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    display: inline-block;
+    max-width: 400px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    /* display: inline-block; */
+    max-width: 60%;
 }
 
 section.services {
-    padding:  50px 300px;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .service-option {
-    text-align: left;
     display: flex;
-    justify-content: space-around;
-    gap: 70px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-option p{
+    max-width: 100%;
 }
 
-h2,
 h3 {
-    color: rgb(67, 67, 67);
-    font-weight: bold;
+    font-size: 22px;
 }
 
-.clients {
+section.clients {
+    padding: 80px 0px;
     background-image: url(Assets/bg-image-2.png);
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    background-repeat: round;
 }
 
 .clients h2 {
     color: white;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+section.projects {
+    padding: 80px 0;
+}
+
+.Cards-Project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.Cards-Project article {
+    max-width: 48%;
+    margin: 16px 0px;
+}
+
+.Cards-Project img {
+    width: 100%;
+}
+
+.Cards-Project p{
+    max-width: 100%;
+}
+
+footer {
+    background-color: #353434;
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+}
+footer img{
+    width: 50px;
+}
+footer h2 {
+    font-size: small;
+    color: white;
+    font-weight: lighter;
+}
+footer a {
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
